@@ -10,7 +10,7 @@ stages {
             echo '----------------- This is a docker-compose phase ----------'
             sh "sudo docker-compose build"
 		//sh "sudo service docker start"
-            sh "sudo docker-compose up"
+            sh "sudo docker-compose up -d"
         }
     }
   }
