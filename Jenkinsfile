@@ -8,9 +8,9 @@ stages {
     stage('Docker compose build') {
         steps {
             echo '----------------- This is a docker-compose phase ----------'
-           // sh "docker-compose build"
-		sh "sudo service docker start"
-            sh "docker-compose up -d"
+            sh "sudo docker-compose build"
+		//sh "sudo service docker start"
+            sh "sudo docker-compose up -d"
         }
     }
   }
