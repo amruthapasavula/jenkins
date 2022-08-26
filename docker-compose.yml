@@ -15,7 +15,7 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
 
  userlogin_service:
-    image: anjireddy121/userloginmicro:0.1.release
+    image: anjireddy121/userloginmm:0.1.release
     mem_limit: 700m
     ports:
       - "8096:8096"
