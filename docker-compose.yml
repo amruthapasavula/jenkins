@@ -1,9 +1,6 @@
 version: '3.7'
 
-
 services:
-
-
  userregistrationservice :
     image: anjireddy121/userregistration:0.1.release
     mem_limit: 700m
@@ -105,7 +102,7 @@ services:
 
  mysql-server:
     image: mysql:latest
-    container_name: mysql1
+    container_name: mysqlcontainer
     environment:    
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: ecommerce
@@ -119,7 +116,7 @@ services:
 
  mongodb-server:
     image: mongo:latest
-    container_name: mongodb1
+    container_name: mongodbcontainer
     environment:
         MONGO_INITDB_USERNAME: root
         MONGO_INITDB_ROOT_PASSWORD: root
