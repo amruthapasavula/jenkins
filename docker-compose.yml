@@ -10,7 +10,7 @@ services:
       - userregbridge
     depends_on:
       - naming-server
-    #  - mysql-server
+      - mysql-server
     environment:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
 
@@ -49,7 +49,7 @@ services:
       - userregbridge
     depends_on:
       - naming-server
-   #   - mysql-server
+      - mysql-server
     environment:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
 
@@ -62,7 +62,7 @@ services:
       - userregbridge
     depends_on:
       - naming-server
-    #  - mongodb-server
+      - mongodb-server
     environment:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
 
@@ -75,7 +75,7 @@ services:
       - userregbridge
     depends_on:
       - naming-server
-    #  - mongodb-server
+      - mongodb-server
     environment:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
 
