@@ -23,7 +23,7 @@ services:
 
 
  userlogin_service:
-    image: anjireddy121/userlogin:0.1.release
+    image: anjireddy121/userloginms:0.1.release
     mem_limit: 700m
     ports:
       - "8096:8096"
